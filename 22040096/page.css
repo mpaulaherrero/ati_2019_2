@@ -1,0 +1,40 @@
+.mainContainer{
+    display:flex;
+    position:relative
+}
+img{
+    width: 200px;
+    height: 300px;
+}
+.infoContainer,.imageContainer{
+    display:inline-block;
+}
+.infoContainer{
+    padding: 20px;
+}
+.title{
+    color:blue;
+    padding-bottom: 10px;
+}
+.title:hover{
+    color:#86b1ef;
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.description{
+    font-style:italic;
+    font-family:sans-serif;
+    padding-bottom: 10px;
+}
+table{
+    padding-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+.languages span{
+    font-weight:bold;
+}
