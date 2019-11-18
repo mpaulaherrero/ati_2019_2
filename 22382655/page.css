@@ -1,0 +1,22 @@
+#nombre {
+    color: green;
+    font-size: 50px;
+}
+
+#descripcion {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#lenguajes {
+    font-weight: bold;
+}
+
+td {
+    border: solid 1px;
+}
+
+#img-perfil {
+    width: 500px;
+    height: 500px;
+}
