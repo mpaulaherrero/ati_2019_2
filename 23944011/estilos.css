@@ -1,0 +1,27 @@
+*{
+	background: #00FF00;
+}
+p.texto {
+	color:red;
+	margin:50px;
+	font-family:" Times New Roman";
+	padding:0;
+	margin:0;
+
+}
+
+h1 {
+	color: red;
+
+}
+
+p{
+	padding: 10px;
+	margin: 10px;
+	border: 10px;
+	font-family:"Arial";
+}
+p.lenguaje {
+	color: orange;	
+}
+

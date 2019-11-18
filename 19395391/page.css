@@ -1,0 +1,26 @@
+p1 { 
+font-size: x-large;
+color: blue;
+font-family: Times, serif;
+ }
+ p2 { 
+font-size: medium;
+color: black;
+font-family: Times, serif;
+font-style: italic;
+ }
+  p3 { 
+font-size: medium;
+color: black;
+font-family: Times, serif;
+ }
+  p4 { 
+font-size: medium;
+color: black;
+font-family: Times, serif;
+font-weight: bold;
+ }
+ body{
+border: solid;	 
+ }
+ 
