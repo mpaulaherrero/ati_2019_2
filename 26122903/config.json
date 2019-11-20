@@ -1,0 +1,19 @@
+{
+  "nombre": "name",
+  "descripcion": "description",
+  "color_fav": "Mi color favorito es:",
+  "libro_fav": "Mi libro favorito es:",
+  "musica_fav": "Mi estilo de musica preferida:",
+  "cedula": "Cedula:",
+  "fecha_nac": "Fecha de nacimineto:",
+  "como_comunicarse": {
+    "email": "Si necesitan comunicarse conmigo me pueden escribir a:"
+  },
+  "videojuego_fav": [
+    "Video juegos favoritos:"
+  ],
+  "genero": "Genero:",
+  "Lenguajes": [
+    "Lenguajes aprendidos:"
+  ]
+}
