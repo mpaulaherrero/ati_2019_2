@@ -1,0 +1,13 @@
+{	
+	"nombreApellido":"Thomas Alfonso",
+	"descripcion":"Soy estudiante de computacion en la UCV, tengo 23 años de edad, me gusta mucho aprender de lo que me llama la atencion, tengo una empresa de desarrollo de software con unas amistades. Actualmente estoy cursando seminario en redes de computadoras con mucho interes en la seguridad.",
+	"color":"Azul",
+	"libro":"No suelo leer",
+	"musica":"Reggaeton",
+	"videoJuegos": ["Fallout", "GTA", "LOL"],
+	"lenguajes":["JavaScript", "C#", "Python"],
+	"ci":"25531670",
+	"genero": "Masculino",
+    "fechaNacimiento":"30/05/1996",
+    "email":"thomalfosno@gmail.com"
+}

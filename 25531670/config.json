@@ -1,0 +1,11 @@
+{
+	"color":"Mi color favorito es: ",
+	"libro":"Mi libro favorito es: ",
+	"musica":"Mi estilo de musica preferida: ",
+	"videoJuego":"Video juegos favoritos: ",
+	"lenguajes":"Lenguajes aprendidos: ",
+    "ci":"C.I.: ",
+    "genero":"Genero: ",
+    "fechaNac": "Fecha de nacimiento: ",
+    "labelEmail":"Si necesitan comunicarse conmigo me pueden escribir a [email]"
+}

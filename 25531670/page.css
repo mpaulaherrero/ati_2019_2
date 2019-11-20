@@ -1,0 +1,31 @@
+h1{
+    color:#010452;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1:hover {
+    font-size: 55px;
+    color: #86b1ef;
+}
+.textInfo{
+    font-style: italic;
+    font-family: Verdana;
+    margin-bottom: 20px;
+}
+.bold{
+    font-weight: bold;
+}
+#mail{
+    margin-top: 20px;
+}
+section{
+    margin-bottom: 0px !important;
+}
+.tdInfo{
+    width: 80%;
+    margin-left: 30px;
+    border: 1px solid #010452;
+    padding: 10px;
+    border-radius: 10px;
+}
