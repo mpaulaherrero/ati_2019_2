@@ -1,0 +1,9 @@
+perfil={
+	"nombre":"Ronald More",
+	"color": "Gris",
+	"libro": "No tengo libro favorito",
+	"musica": "Escucho cualquier musica menos el Requeton",
+	"video_juego": "Alchemist Code",
+	"lenguajes": ["c,c++","Sql","haskell","BPM"],
+	"email": "ronaldmore1424@gmail.com",
+}

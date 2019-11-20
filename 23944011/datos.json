@@ -1,0 +1,9 @@
+config={
+	"color": "Mi Color favorito es el: ",
+	"libro": "Mi libro favorito es el: ",
+	"musica": "Estilo de musica preferido: ",
+	"video_juego": "Mi video juego favorito es: ",
+	"lenguajes": "Lenguajes preferidos: ",
+	"email": "si necesitan comunicarse conmigo me pueden escribir a",
+
+}

@@ -1,0 +1,27 @@
+* { margin: 0; padding: 0; }
+body { position: relative ; }
+
+
+				#grad {
+  				background-image: linear-gradient(to right, #053733, #110e0f	);
+				}
+				.imgRedonda {
+   				 width:140px;
+    			 height:140px;
+   				 border-radius:150px;
+   				 float: right;
+						}
+				#titulo{ 
+				color: silver;
+				font: 48px "comic sans MS";
+				}
+
+				#descripcion{ 
+				font: 24px "comic sans MS";
+				}
+
+				#tabla{
+					font-size: 22px;
+				}
+				
+		
