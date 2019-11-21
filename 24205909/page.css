@@ -1,0 +1,47 @@
+.texto {
+    font-family: verdana;
+    outline-style: inset;
+    outline-color: rgb(0, 80, 80);
+    padding: 0.5%;
+    box-shadow: 0px 20px 30px rgb(0, 75, 75);
+    width: 60%;
+}
+
+img {
+    width: 340px; 
+    height: 420px;
+}
+
+.foto{
+    margin-right: 1%;
+    padding-top: .23%;
+    padding-left: .23%;
+    padding-right: .23%;
+    outline-style: inset;
+    outline-color: rgb(0, 80, 80);
+    box-shadow: 0px 20px 30px rgb(0, 75, 75);
+}
+
+h1{
+    color: teal;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.negrita{
+    font-weight: 700;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.profile {
+    display: flex;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+p,td{
+    text-align: justify;
+    font-size: large;
+}
