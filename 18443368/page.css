@@ -1,0 +1,36 @@
+@font-face { font-family: 'Power Green'; src: url('Power Green.ttf'); } 
+
+body{
+    background-color: whitesmoke;
+}
+
+
+h1{
+    color: darkgreen;
+    font-family: 'Power Green';
+    font-size: 55px;
+}
+
+td{
+    font-family: 'Courier New';
+}
+
+a{
+    font-family: 'Courier New';
+}
+
+#mail-link{
+    font-family: 'Courier New';
+}
+
+#desc{
+    font-family: 'Garamond';
+    font-size: large;
+    color: teal;
+}
+
+#colour{
+    font-family: 'Courier New';
+    font-weight: bold;
+    color: darkgreen;
+}
