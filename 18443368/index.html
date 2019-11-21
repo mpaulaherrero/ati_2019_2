@@ -7,6 +7,11 @@
 		<link rel="stylesheet" href="../css/style.css"  type="text/css">
 		<link rel="stylesheet" href="page.css" type="text/css">
 		<title>Diego Branco</title>
+		<script type=“text/javascript” src=config.json”></script>
+		<script type=“text/javascript” src=perfil.json”></script>
+
+
+		
 	</head>
 	<body>
 	    <header>
@@ -24,63 +29,60 @@
 	        <p>
 			<img src = "18443368.jpg" alt = "Mi Hermosa Cara" align = left width = 320 height = 320 >
 		</p>
-		<h1>
+		<h1 id = name>
 			Diego Branco
 		</h1>
 		<br>
 
 		<p id = "desc">
-			Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, y me planeo graduar con la mención "Ingeniería de Software".
+			Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, 
+			y me planeo graduar con la mención "Ingeniería de Software".
 		</p>
 
 		<br><br>
 
 		<table>
 			<tr>
-				<td>
-					Mi color favorito es:
-				</td>
-				<td id = "colour">
-					Verde
-				</td>
+				<td id = "favColorQ"></td>
+				<td id = "favColorA"></td>
 			</tr>
 			<tr>
-				<td>
+				<td id = "favBookQ">
 					Mi libro favorito es:
 				</td>
-				<td>
+				<td id = "favBookA">
 					La Isla Misteriosa, Julio Verne
 				</td>
 			</tr>
 			<tr>
-				<td>
+				<td id = "favMusicQ">
 					Estilo de música preferida es:
 				</td>
-				<td>
+				<td id = "favMusicA">
 					Soundtracks, Rock, Metal
 				</td>
 			</tr>
 			<tr>
-				<td>
+				<td id = "favGameQ">
 					Mis Video juegos favoritos son: 
 				</td>
-				<td>
+				<td id = "favGameA">
 					JRPGs (Final Fantasy, Pokémon, Shin Megami Tensei, etc)
 				</td>
 			</tr>
 			<tr>
-				<td>
+				<td id = "langQ">
 					Lenguajes aprendidos:
 				</td>
-				<td>
+				<td id = langA>
 					 C/C++, Python, Java
 				</td>
 			</tr>
 			
 		</table>
 		<br>
-		<p id = "mail-link">
-			Si necesitan comunicarse conmigo me pueden escribir a: <a href = "mailto: diegoh89@gmail.com">diegoh89@gmail.com</a>
+		<p id = "mail-text">
+			Si necesitan comunicarse conmigo me pueden escribir a: <a id = mail-addr href = "mailto: diegoh89@gmail.com">diegoh89@gmail.com</a>
 		</p>
 
 
@@ -94,3 +96,8 @@
 	    </footer>
 	</body>
 </html>
+
+<script>
+	document.getElementById("favColorQ").innerText = config.es.color;
+	document.getElementById("favColorA").innerText = perfil.color;
+</script>

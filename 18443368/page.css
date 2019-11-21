@@ -19,7 +19,7 @@ a{
     font-family: 'Courier New';
 }
 
-#mail-link{
+#mail-text{
     font-family: 'Courier New';
 }
 
@@ -29,7 +29,7 @@ a{
     color: teal;
 }
 
-#colour{
+#favColorA{
     font-family: 'Courier New';
     font-weight: bold;
     color: darkgreen;

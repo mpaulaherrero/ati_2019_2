@@ -1,11 +1,10 @@
-perfil =
-{
+var perfil = {
     "nombre": "Diego Branco",
     "descripción": "Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, y me planeo graduar con la mención \"Ingeniería de Software\".",
     "color": "Verde",
-    "libro": "La Isla Misteriosa",
+    "libro": "La Isla Misteriosa, Julio Verne",
     "Musica": ["Soundtracks", "Rock", "Metal"],
-    "video_juego": "JRPGs",
+    "video_juego": "JRPGs (Final Fantasy, Pokémon, Shin Megami Tensei, etc)",
     "lenguajes": ["C","C++","Python","Java"],
     "email": "diegoh89@gmail.com",
     "CI": 18443368,
