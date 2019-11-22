@@ -7,8 +7,8 @@
 		<link rel="stylesheet" href="../css/style.css"  type="text/css">
 		<link rel="stylesheet" href="page.css" type="text/css">
 		<title>Diego Branco</title>
-		<script type=“text/javascript” src=config.json”></script>
-		<script type=“text/javascript” src=perfil.json”></script>
+		<script type="text/javascript" src="config.json"></script>
+		<script type="text/javascript" src="perfil.json"></script>
 
 
 		
@@ -29,15 +29,10 @@
 	        <p>
 			<img src = "18443368.jpg" alt = "Mi Hermosa Cara" align = left width = 320 height = 320 >
 		</p>
-		<h1 id = name>
-			Diego Branco
-		</h1>
+		<h1 id = "name"></h1>
 		<br>
 
-		<p id = "desc">
-			Soy un estudiante de computación de la facultad de Ciencias de la Universidad Central de Venezuela, 
-			y me planeo graduar con la mención "Ingeniería de Software".
-		</p>
+		<p id = "desc"></p>
 
 		<br><br>
 
@@ -47,43 +42,27 @@
 				<td id = "favColorA"></td>
 			</tr>
 			<tr>
-				<td id = "favBookQ">
-					Mi libro favorito es:
-				</td>
-				<td id = "favBookA">
-					La Isla Misteriosa, Julio Verne
-				</td>
+				<td id = "favBookQ"></td>
+				<td id = "favBookA"></td>
 			</tr>
 			<tr>
-				<td id = "favMusicQ">
-					Estilo de música preferida es:
-				</td>
-				<td id = "favMusicA">
-					Soundtracks, Rock, Metal
-				</td>
+				<td id = "favMusicQ"></td>
+				<td id = "favMusicA"></td>
 			</tr>
 			<tr>
-				<td id = "favGameQ">
-					Mis Video juegos favoritos son: 
-				</td>
-				<td id = "favGameA">
-					JRPGs (Final Fantasy, Pokémon, Shin Megami Tensei, etc)
-				</td>
+				<td id = "favGameQ"></td>
+				<td id = "favGameA"></td>
 			</tr>
 			<tr>
-				<td id = "langQ">
-					Lenguajes aprendidos:
-				</td>
-				<td id = langA>
-					 C/C++, Python, Java
-				</td>
+				<td id = "langQ"></td>
+				<td id = "langA"></td>
 			</tr>
 			
 		</table>
 		<br>
-		<p id = "mail-text">
-			Si necesitan comunicarse conmigo me pueden escribir a: <a id = mail-addr href = "mailto: diegoh89@gmail.com">diegoh89@gmail.com</a>
-		</p>
+		<p id = "mail-text"></p>
+		<a id = "mail-addr"></a>
+		
 
 
 	</body>
@@ -98,6 +77,25 @@
 </html>
 
 <script>
-	document.getElementById("favColorQ").innerText = config.es.color;
-	document.getElementById("favColorA").innerText = perfil.color;
+	document.getElementById("name").innerHTML = perfil.nombre;
+	document.getElementById("desc").innerHTML = perfil.descripción;
+
+	document.getElementById("favColorQ").innerHTML = config.es.color;
+	document.getElementById("favColorA").innerHTML = perfil.color;
+
+	document.getElementById("favBookQ").innerHTML = config.es.libro;
+	document.getElementById("favBookA").innerHTML = perfil.libro;
+
+	document.getElementById("favMusicQ").innerHTML = config.es.musica;
+	document.getElementById("favMusicA").innerHTML = perfil.Musica;
+
+	document.getElementById("favGameQ").innerHTML = config.es.video_juego;
+	document.getElementById("favGameA").innerHTML = perfil.video_juego;	
+
+	document.getElementById("langQ").innerHTML = config.es.lenguajes;
+	document.getElementById("langA").innerHTML = perfil.lenguajes;
+	
+	document.getElementById("mail-text").innerHTML = config.es.como_comunicarse;
+	document.getElementById("mail-addr").innerHTML = perfil.email;
+	document.getElementById("mail-addr").setAttribute("href", "mailto: "+perfil.email)		
 </script>
