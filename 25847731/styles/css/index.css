@@ -1,0 +1,72 @@
+.profile {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile .image {
+  width: 300px;
+}
+
+.profile .name {
+  color: green;
+}
+
+.profile .description {
+  color: red;
+  font-family: "Lucida Console";
+}
+
+.profile .data .body {
+  margin-top: 10px;
+}
+
+.profile .data .body {
+  display: -ms-grid;
+  display: grid;
+  grid: 1fr;
+  grid-row-gap: 5px;
+}
+
+#userContact {
+  display: block;
+  padding-top: 20px;
+}
+
+/* Compu normal  */
+@media only screen and (min-width: 840px) {
+  .profile .data {
+    margin-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 839px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .data {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .data .body {
+    margin-left: 10px;
+    grid-row-gap: 0;
+  }
+  .fieldValue {
+    padding-top: 3px;
+    padding-bottom: 15px;
+  }
+  .field {
+    display: contents;
+  }
+}
+/*# sourceMappingURL=index.css.map */
