@@ -1,0 +1,17 @@
+const config = {
+	"es":{
+	"color":"Mi color favorito es:",
+	"libro":"Mi libro favorito es:",
+	"musica":"Estilo de musica preferido:",
+	"video_juego":"Mis videosjuegos favoritos son:",
+	"lenguajes":"Lenguajes Aprendidos:",
+	"comunicacion":"Si necesitan comunicarse conmigo escribir a : [email]"
+},
+"en":{
+	"color":"My favorite color is:",
+	"libro":"My favorite book is:",
+	"musica":"My favorite music genre is:",
+	"video_juego":"My favorite videogames are:",
+	"lenguajes":"Learned languages:",
+	"comunicacion":"If you need to speak with me send me a message to: [email]"
+}}

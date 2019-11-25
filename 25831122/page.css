@@ -1,11 +1,9 @@
-table{
-	margin: none;
-	padding: none;
-	border: none;
-	animation-name: fondo;
-	animation-duration: 10s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate-reverse;
+.perfil{
+	width: 80vw;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
 }
 img{
 	align-self: center;
@@ -21,7 +19,14 @@ h1{
 }
 
 h1:hover{
-	color: blue;
+	color: teal;
+}
+
+.info{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
 }
 
 .lenguajes{
