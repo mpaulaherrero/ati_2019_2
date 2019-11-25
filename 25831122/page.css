@@ -3,6 +3,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+
 }
 img{
 	align-self: center;
@@ -27,7 +28,6 @@ h1:hover{
   display: flex;
   flex-direction: column;
 }
-
 
 .lenguajes{
 	font-weight: bold;

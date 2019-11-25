@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta charset="UTF-8">
+		<link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../css/style.css"  type="text/css">
+        <link rel="stylesheet" href="page.css" type="text/css">
+        <script type="text/javascript" src="config.json"></script>
+        <script type="text/javascript" src="perfil.json"></script>
+		<title>Yldemaro Romero</title>
+	</head>
+	<body>
+	    <header>
+			<div class="logo" id="logo"></div>
+	        <nav>
+				<ul>
+				<li id="enter"></li>
+	            <li><a href="../index.html" id="home"></a></li>
+				<li></li>
+				</ul>
+	        </nav>
+	    </header>
+	    <section>
+        <div class="mainContainer">
+            <div class="imageContainer">
+                <img src="22040096.jpg" alt="Perfil">
+            </div>
+            <div class="infoContainer">
+                <div>
+                    <h1 class="title" id="fullName"></h1>
+                    <p class="description" id="description"></p>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td id="labelColor"></td>
+                            <td id="textColor"></td>
+                        </tr>
+                        <tr>
+                            <td id="labelBook"></td>
+                            <td id="textBook"></td>
+                        </tr>
+                        <tr>
+                            <td id="labelMusic"></td>
+                            <td id="textMusic"></td>
+                        </tr>
+                        <tr>
+                            <td id="labelGame"></td>
+                            <td id="textGame"></td>
+                        </tr>
+                        <tr class="languages">
+                            <td><span id="labelLanguages"></span></td>
+                            <td><span id="textLanguages"></span></td>
+                        </tr>
+                    </table>
+                    <p id="labelInfo"></p>
+                </div>
+            </div>
+        </div>
+	    </section>
+	    <aside></aside>
+	    <footer id="footer">
+	    </footer>
+    </body>
+    <script type="text/javascript">
+        var ATI = document.createTextNode(config.course); 
+        var Semester = document.createTextNode(config.semester); 
+        var UCV = document.createElement("span");
+        UCV.innerText = "["+config.college+"]";
+        document.getElementById("logo").appendChild(ATI);
+        document.getElementById("logo").appendChild(UCV);
+        document.getElementById("logo").appendChild(Semester);
+
+        document.getElementById('enter').innerText = config.enter;
+        
+        document.getElementById('home').innerText = config.home;
+        
+        document.getElementById('fullName').innerText = perfil.full_name;
+        document.getElementById('description').innerText = perfil.description;
+
+        document.getElementById('labelColor').innerText = config.favorite_color;
+        document.getElementById('textColor').innerText = perfil.color;
+        document.getElementById('labelBook').innerText = config.favorite_book;
+        document.getElementById('textBook').innerText = perfil.book;
+        document.getElementById('labelMusic').innerText = config.music;
+        document.getElementById('textMusic').innerText = perfil.music;
+        document.getElementById('labelGame').innerText = config.game;
+        document.getElementById('textGame').innerText = perfil.game;
+        document.getElementById('labelLanguages').innerText = config.languages;
+        document.getElementById('textLanguages').innerText = perfil.languages;
+
+        var linkEmail = document.createElement("a");
+        linkEmail.href = "mailto:"+perfil.email;
+        linkEmail.innerText = perfil.email;
+        document.getElementById('labelInfo').innerText = config.to_comunicate;
+        document.getElementById("labelInfo").appendChild(linkEmail);
+
+        document.getElementById('footer').innerText = config.footer;
+    </script>
+</html>
