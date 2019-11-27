@@ -1,0 +1,14 @@
+config = {
+	"id":"identificador",
+	"ci":"Nro de Cedula: ",
+	"nombre": "Nombres y Apellidos: ",
+	"descripcion": "Descripción del perfil: ",
+	"gen":"Género tipo: ",
+	"fecha_nacimiento":"Nací el: ",
+	"colore": "Mi color favorito es: ",
+	"libros": "Mi libro favorito es: ",
+	"musica": "Mi estilo de música preferida es: ",
+	"video_juego": "Mis Video juegos favoritos son: ",
+	"lenguajes": "Lenguajes aprendidos: ",
+	"informacion_a":"Si necesitan comunicarse conmigo me pueden escribir a:"
+}

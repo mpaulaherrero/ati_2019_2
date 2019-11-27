@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; }
+body { position: relative ; }
+
+
+				
+
+				#titulo{ 
+				color: green;
+				font: 48px "comic sans MS";
+				}
+
+				#descripcion{ 
+				font: 24px "comic sans MS";
+				}
+
+				#tabla{
+					font-size: 22px;
+				}
+				
+
+img{
+	width:250px ;
+	height:350px;
+}	

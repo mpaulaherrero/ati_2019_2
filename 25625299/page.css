@@ -1,0 +1,17 @@
+h1{
+	color: deeppink;
+	font-size: 200%;
+}
+
+.cursiva{
+	font-style: italic;
+}
+
+.negrita{
+	font-weight: bold; 
+}
+
+.fuente{
+	font-family: "Courier";
+	font-size: 100%;
+}

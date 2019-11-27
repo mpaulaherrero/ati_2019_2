@@ -1,0 +1,65 @@
+td {
+    vertical-align: top;
+}
+
+td a:link {
+	text-decoration:none;   
+	color: orange;
+}
+
+td a:hover { 
+	text-decoration: underline;
+	color: orange;
+}
+
+td a:visited {
+	text-decoration:none;   
+	color: red;
+}
+
+#foto {
+	border: 0px solid black;
+	width: 200px;
+}
+
+#foto img {
+	border-radius: 60px 0px 0px 0px;
+}
+
+#contenido {
+	border: 1px solid black;
+	width: 700px;
+	box-shadow: 5px 5px gray;
+}
+
+#contenido table{
+	width: 100%;
+}
+
+#contenido  {
+	border: 1px solid black;
+	padding: 6px;
+}
+
+#nombre {
+	color: orange; 
+	font-family: verdana;
+	font-size: 24pt;
+	margin: 0;
+}
+
+#descripcion {
+	font-family: arial;
+	font-style: italic;
+	margin-top: 3px;
+}
+
+#agenda {
+	border: 0px solid black;
+	padding: 0;
+	width: 450px;
+}
+
+.negrita {
+	font-weight: bold;
+}
