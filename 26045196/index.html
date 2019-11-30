@@ -15,109 +15,99 @@
 			<div class="logo"></div>
 	        <nav>
 				<ul>
-				<li id="enter"></li>
-	            <li id="home"></li>
-				<li></li>
+					<li id="enter"></li>
+		            <li id="home"></li>
+					<li></li>
 				</ul>
 	        </nav>
 	    </header>
 	    <section>
-
 	        <span>
 				<img src="26045196.jpg" align="left">
 				<font class="title">
 					<strong id="full_name"></strong>
 				</font>
-				<br>
-				<br>
+				<br id="double_br">
 				<font class="text_area_type_1" id="description"></font>
+				<br id="double_br">
+				<font class="text_area_type_2" id="colour_desc"></font>
 				<br>
+				<font class="text_area_type_2" id="book_desc"></font>
 				<br>
-				<font class="text_area_type_2" id="colour_desc">
-				</font>
+				<font class="text_area_type_2" id="music_desc"></font>
 				<br>
-				<font class="text_area_type_2" id="book_desc">
-				</font>
-				<br>
-				<font class="text_area_type_2" id="music_desc">
-				</font>
-				<br>
-				<font class="text_area_type_2" id="game_desc">
-				</font>
+				<font class="text_area_type_2" id="game_desc"></font>
 				<br>
 				<font class="text_area_type_2">
 					<strong id="language_desc"></strong>
 				</font>
-				<br>
-				<br>
-				<font class="text_area_type_2" id="mail_contact">
-				</font>
+				<br id="double_br">
+				<font class="text_area_type_2" id="mail_contact"></font>
 			</span>
-
 	    </section>
 	    <aside></aside>
 	    <footer id="footer"></footer>
-	</body>
-	<script type="text/javascript">
-		function n_spaces(n=1){
-			//Function to return n spaces
-			var i;
-			var spaces="";
-			for (i=0;i<n;i++){
-				spaces += "&nbsp;";
+	    <script type="text/javascript">
+			function n_spaces(n=1){
+				//Function to return n spaces
+				var i;
+				var spaces="";
+				for (i=0;i<n;i++){
+					spaces += "&nbsp;";
+				}
+				return spaces
 			}
-			return spaces
-		}
-		//Title
-		document.title = perfil.nombre;
+			//Title
+			document.title = perfil.nombre;
 
-		//Navbar
-		document.getElementById('enter').innerText = config.enter;
-		var home_link = document.createElement("a");
-		home_link.href = "../index.html";
-        home_link.innerText = config.home;
-		document.getElementById("home").appendChild(home_link);
-		var course = document.createTextNode(config.curso); 
-		var semester = document.createTextNode(config.semestre);
-		var institution = document.createElement("span");
-		institution.innerText = "[" + config.institution + "]";
-		var logo = document.getElementsByClassName("logo");
-		logo[0].appendChild(course);
-		logo[0].appendChild(institution);
-		logo[0].appendChild(semester);
+			//Navbar
+			document.getElementById('enter').innerText = config.enter;
+			var home_link = document.createElement("a");
+			home_link.href = "../index.html";
+	        home_link.innerText = config.home;
+			document.getElementById("home").appendChild(home_link);
+			var course = document.createTextNode(config.curso);
+			var semester = document.createTextNode(config.semestre);
+			var institution = document.createElement("span");
+			institution.innerText = "[" + config.institution + "]";
+			var logo = document.getElementsByClassName("logo");
+			logo[0].appendChild(course);
+			logo[0].appendChild(institution);
+			logo[0].appendChild(semester);
 
-		//Body
-		document.getElementById("full_name").innerText = perfil.nombre;
-		document.getElementById("description").innerText = perfil.descripción;
-		document.getElementById("colour_desc").innerHTML = config.color + n_spaces(17) + perfil.color;
-		document.getElementById("book_desc").innerHTML = config.libro + n_spaces(17) + perfil.libro;
-		document.getElementById("music_desc").innerText = config.musica + " ";
-		var size = perfil.musica.length
-		for (music in perfil.musica){
-			if (music != 0 && music!=size-1)
-				document.getElementById("music_desc").innerText  += ",";
-			if (music==size-1 && music!= 0)
-				document.getElementById("music_desc").innerHTML  += n_spaces() + "y";
-			document.getElementById("music_desc").innerText  += " " + perfil.musica[music];
+			//Body
+			document.getElementById("full_name").innerText = perfil.nombre;
+			document.getElementById("description").innerText = perfil.descripción;
+			document.getElementById("colour_desc").innerHTML = config.color + n_spaces(17) + perfil.color;
+			document.getElementById("book_desc").innerHTML = config.libro + n_spaces(17) + perfil.libro;
+			document.getElementById("music_desc").innerText = config.musica + " ";
+			var size = perfil.musica.length
+			for (music in perfil.musica){
+				if (music != 0 && music!=size-1)
+					document.getElementById("music_desc").innerText  += ",";
+				if (music==size-1 && music!= 0)
+					document.getElementById("music_desc").innerHTML  += n_spaces() + "y";
+				document.getElementById("music_desc").innerText  += " " + perfil.musica[music];
 
-		}
-		document.getElementById("game_desc").innerHTML = config.video_juego + n_spaces(12) + perfil.video_juego;
-		document.getElementById("language_desc").innerHTML = config.lenguajes + n_spaces(9);
-		size = perfil.lenguajes.length;
-		for (language in perfil.lenguajes){
-			if (language != 0 && language!=size-1)
-				document.getElementById("language_desc").innerHTML  += ",";
-			if (language==size-1 && language!= 0)
-				document.getElementById("language_desc").innerHTML  += n_spaces() + "y";
-			document.getElementById("language_desc").innerHTML  += " " + perfil.lenguajes[language];
-		}
-		var link = document.createElement("a");
-        link.href = "mailto:" + perfil.email;
-        link.innerText = perfil.email;
-        document.getElementById('mail_contact').innerText = config.email_contact;
-        document.getElementById("mail_contact").appendChild(link);
+			}
+			document.getElementById("game_desc").innerHTML = config.video_juego + n_spaces(12) + perfil.video_juego;
+			document.getElementById("language_desc").innerHTML = config.lenguajes + n_spaces(9);
+			size = perfil.lenguajes.length;
+			for (language in perfil.lenguajes){
+				if (language != 0 && language!=size-1)
+					document.getElementById("language_desc").innerHTML  += ",";
+				if (language==size-1 && language!= 0)
+					document.getElementById("language_desc").innerHTML  += n_spaces() + "y";
+				document.getElementById("language_desc").innerHTML  += " " + perfil.lenguajes[language];
+			}
+			var link = document.createElement("a");
+	        link.href = "mailto:" + perfil.email;
+	        link.innerText = perfil.email;
+	        document.getElementById('mail_contact').innerText = config.email_contact;
+	        document.getElementById("mail_contact").appendChild(link);
 
-        //Footer
-        document.getElementById('footer').innerText = config.footer;
-	</script>
+	        //Footer
+	        document.getElementById('footer').innerText = config.footer;
+		</script>
+	</body>
 </html>
