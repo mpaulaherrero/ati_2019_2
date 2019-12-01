@@ -5,7 +5,7 @@ const dom_userContact = document.getElementById("userContact");
 // perfil de perfil.js
 // config de config.js
 
-const locale = "es";
+const locale = "en";
 const doNothing = str => str;
 const ArrayToString = arr => arr.join(", ");
 
