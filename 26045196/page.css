@@ -1,0 +1,27 @@
+/** {border: 1px solid black; margin:5px;}*/
+.title{
+	color: orange;
+	font-size: 48px;
+}
+.text_area_type_1{
+	color: black;
+	font-size: 24px;
+	font-family: verdana;
+}
+.text_area_type_2{
+	color: black;
+	font-size: 18px;
+	font-family: verdana;
+}
+
+span > img {
+	width: 400px;
+	height: 600px;
+	padding-right: 2%;
+}
+#double_br {
+  content: "";
+  margin: 5em;
+  display: block;
+  font-size: 15%;
+}
