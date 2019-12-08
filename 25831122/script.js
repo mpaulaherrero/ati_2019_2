@@ -8,9 +8,7 @@ const domLenguaje = document.getElementById("lenguaje");
 const domCom = document.getElementById("comunicacion");
 var locale = "es";
 
-
-
-
+document.title = perfil.nombre;
 domName.innerHTML = perfil.nombre;
 domDesc.innerHTML = perfil.descripcion;
 domColor.innerHTML = config[locale]["color"] + ' ' +perfil.color;

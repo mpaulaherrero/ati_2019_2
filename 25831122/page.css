@@ -1,9 +1,11 @@
+
 .perfil{
 	width: 80vw;
+/*
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-
+*/
 }
 img{
 	align-self: center;
@@ -47,4 +49,10 @@ h1:hover{
 		background: black;
 		color:white;
 	}
+}
+.container{
+	width: 100%;
+}
+.row{
+	margin-left: 0px;
 }
