@@ -1,0 +1,21 @@
+.title{
+	color: orange;
+	font-size: 48px;
+}
+.text_area_type_1{
+	color: black;
+	font-size: 24px;
+	font-family: verdana;
+}
+.text_area_type_2{
+	color: black;
+	font-size: 18px;
+	font-family: verdana;
+}
+.img-fluid {
+	height: auto;
+	max-width: 100%;
+}
+.without-padding{
+	padding: 0px !important;
+}
