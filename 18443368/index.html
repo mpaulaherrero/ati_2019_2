@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	    <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="page.css">
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<title>Diego Branco</title>
+		<script type="text/javascript" src="config.json"></script>
+		<script type="text/javascript" src="perfil.json"></script>
+
+
+		
+	</head>
+	<body>
+	    <header>
+			<div class="logo">ATI<span>[UCV]</span> 2019-2</div>
+	        <nav>
+				<ul>
+				<li>Entrar</li>
+	            <li><a href="../index.html">Inicio</a></li>
+				<li></li>
+				</ul>
+	        </nav>
+	    </header>
+	    <section>
+
+	        <p>
+			<img src = "18443368.jpg" alt = "Mi Hermosa Cara" align = left width = 320 height = 320 >
+		</p>
+		<h1 id = "name"></h1>
+		<br>
+
+		<blockquote class="blockquote-reverse">
+			<p id = "desc"></p>
+		</blockquote>
+
+		<br><br>
+
+		<table class = "table">
+			<tr>
+				<td id = "favColorQ"></td>
+				<td id = "favColorA"></td>
+			</tr>
+			<tr>
+				<td id = "favBookQ"></td>
+				<td id = "favBookA"></td>
+			</tr>
+			<tr>
+				<td id = "favMusicQ"></td>
+				<td id = "favMusicA"></td>
+			</tr>
+			<tr>
+				<td id = "favGameQ"></td>
+				<td id = "favGameA"></td>
+			</tr>
+			<tr>
+				<td id = "langQ"></td>
+				<td id = "langA"></td>
+			</tr>
+			
+		</table>
+		<br>
+		<pre>
+		<p id = "mail-text"></p>
+		<a id = "mail-addr">Diegoh89@gmail.com<span class="glyphicon glyphicon-envelope"></span></a>
+		</pre>	
+	    </section>
+	    <aside></aside>
+	    <footer>
+	        Copyright © 2019 Escuela de computación - ATI. Todos los derechos reservados
+	    </footer>
+		<script>
+			document.getElementById("name").innerHTML = perfil.nombre;
+			document.getElementById("desc").innerHTML = perfil.descripción;
+
+			document.getElementById("favColorQ").innerHTML = config.es.color;
+			document.getElementById("favColorA").innerHTML = perfil.color;
+
+			document.getElementById("favBookQ").innerHTML = config.es.libro;
+			document.getElementById("favBookA").innerHTML = perfil.libro;
+
+			document.getElementById("favMusicQ").innerHTML = config.es.musica;
+			document.getElementById("favMusicA").innerHTML = perfil.Musica;
+
+			document.getElementById("favGameQ").innerHTML = config.es.video_juego;
+			document.getElementById("favGameA").innerHTML = perfil.video_juego;	
+
+			document.getElementById("langQ").innerHTML = config.es.lenguajes;
+			document.getElementById("langA").innerHTML = perfil.lenguajes;
+			
+			document.getElementById("mail-text").innerHTML = config.es.como_comunicarse;
+			
+			document.getElementById("mail-addr").setAttribute("href", "mailto: "+perfil.email)	
+			
+		</script>
+
+	</body>
+</html>
+
