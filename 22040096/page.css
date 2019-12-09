@@ -1,0 +1,36 @@
+.mainContainer{
+    display:flex;
+    position:relative
+}
+.infoContainer,.imageContainer{
+    display:inline-block;
+}
+.infoContainer{
+    padding: 20px;
+}
+.title{
+    color:#004085;;
+}
+.title:hover{
+    color:#86b1ef;
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.description{
+    font-style:italic;
+    font-family:sans-serif;
+    padding-bottom: 10px;
+}
+a{
+    text-decoration: none;
+}
+.languages label{
+    font-weight:bold ;
+}
+
+footer{
+    text-align: center;
+}

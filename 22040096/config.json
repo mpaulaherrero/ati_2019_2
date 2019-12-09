@@ -1,0 +1,14 @@
+var config = {
+  "favorite_color": "Mi color favorito es:",
+  "favorite_book": "Mi libro favorito es:",
+  "music": "Mi estilo de música preferida:",
+  "game": "Video juego favoritos:",
+  "languages": "Lenguajes aprendidos:",
+  "to_comunicate": "Si necesitan comunicarse conmigo me pueden escribir a: ",
+  "footer":"Copyright © 2019 Escuela de computación - ATI. Todos los derechos reservados",
+  "home":"Inicio",
+  "enter":"Entrar",
+  "course":"ATI",
+  "college":"UCV",
+  "semester":" 2019-2"
+}
