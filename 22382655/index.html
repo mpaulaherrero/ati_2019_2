@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+    <link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="page.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script type="text/javascript" src="config.json"></script>
+    <script type="text/javascript" src="perfil.json"></script>
+    <title>Osvani Colina</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo" id="logo"></div>
+        <nav>
+            <ul>
+                <li>Entrar</li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="22382655.jpg" class="img-fluid" alt="Nada" id="img-perfil">
+            </div>
+            <div class="col-lg-6">
+                <h1 id="nombre"></h1>
+                <p id="descripcion"></p>
+                <p id="color"></p>
+                <p id="libro"></p>
+                <p id="musica"></p>
+                <p id="videojuego"></p>
+                <p id="lenguajes"></p>
+                <p id="email"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <aside></aside>
+    <footer></footer>
+
+    <script>
+        let asignatura = config.asignatura.split(' ');
+        let email = config.email_contact;
+        let email_anchor = `<a href="mailto:${perfil.email}?subject=Prueba">${perfil.email}</a>`;
+        email = email.replace('[email]', email_anchor);
+
+        document.getElementById('logo').innerHTML = `${asignatura[0]}<span>[${asignatura[1]}]</span> ${asignatura[2]}`;
+        document.getElementById('nombre').innerHTML = `${perfil.nombre}`;
+        document.getElementById('descripcion').innerHTML = `${perfil.descripcion}`;
+        document.getElementById('color').innerHTML = `${config.color} ${perfil.color}`;
+        document.getElementById('libro').innerHTML = `${config.libro} ${perfil.libro}`;
+        document.getElementById('musica').innerHTML = `${config.musica} ${perfil.musica[0]} y ${perfil.musica[1]}`;
+        document.getElementById('videojuego').innerHTML = `${config.videojuego} ${perfil.videojuego[0]} y ${perfil.videojuego[1]}`;
+        document.getElementById('lenguajes').innerHTML = `${config.lenguajes} ${perfil.lenguajes[0]}, ${perfil.lenguajes[1]}, ${perfil.lenguajes[2]}, ${perfil.lenguajes[3]}, ${perfil.lenguajes[4]}`;
+        document.getElementById('email').innerHTML = email;
+        document.getElementsByTagName('footer')[0].innerHTML = config.footer;
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+.texto {
+    font-family: verdana !important;
+    outline-style: inset !important;
+    outline-color: rgb(0, 80, 80) !important;
+    padding: 0.5% !important;
+    box-shadow: 0px 20px 30px rgb(0, 75, 75) !important;
+    width: 60% !important;
+}
+
+img {
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+.foto{
+    width: 100% !important;
+    height: 100% !important;
+    margin-right: 1% !important;
+    padding-top: .23% !important;
+    padding-left: .23% !important;
+    padding-right: .23% !important;
+    outline-style: inset !important;
+    outline-color: rgb(0, 80, 80) !important;
+    box-shadow: 0px 20px 30px rgb(0, 75, 75) !important;
+}
+
+h1{
+    color: teal !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black !important;
+}
+
+.negrita{
+    font-weight: 700 !important;
+}
+
+body{
+    background-color: lightgray !important;
+}
+
+.profile {
+    display: flex !important;
+    /* padding-top: 5% !important;
+    padding-left: 5% !important; */
+}
+
+p,td{
+    text-align: justify !important;
+    font-size: large !important;
+}
