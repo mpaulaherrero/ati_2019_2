@@ -8,10 +8,14 @@
 		<link rel="stylesheet" href="page.css" type="text/css">
 		<script type="text/javascript" src="perfil.json"></script>
 		<script type="text/javascript" src="config.json"></script>
-		<title>Armando Rivas</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<title id="titulo"></title>
 	</head>
 	<body>
-	    <header>
+	    <header class="row">
 			<div class="logo">ATI<span>[UCV]</span> 2019-2</div>
 	        <nav>
 				<ul>
@@ -21,19 +25,20 @@
 				</ul>
 	        </nav>
 	    </header>
-	    <section class="profile">
+	    <section class="profile container-fluid">
 
-		<div class="foto">
+		<div class="foto col-lg-3 col-md-4 col-sm-5">
 			<img src="24205909.jpg">
 		</div>
 			
-		<div class="texto">
-			<h1 id="nombre"></h1>
+		<div class="texto col-lg-7 col-md-7 col-sm-7">
+			<h1 class="col-lg-12" id="nombre"></h1>
 			<i>
-				<p id="descripcion"></p>
+				<p class="col-lg-12" id="descripcion"></p>
 			</i>
 			
-				<table>  
+			<div class="col-lg-12">
+				<table >  
 					<col>
 					<col>
 					<tr>
@@ -57,8 +62,8 @@
 						<td class="negrita" id="lenguajesp"></td>
 					</tr>
 				</table>
-			
-			<p id="email"></p>
+			</div>
+			<p class="col-lg-12" id="email"></p>
 		</div>
 			
 	
