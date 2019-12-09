@@ -12,9 +12,10 @@
 	font-size: 18px;
 	font-family: verdana;
 }
-
-span > img {
-	width: 400px;
-	height: 600px;
-	padding-right: 2%;
+.img-fluid {
+	height: auto;
+	max-width: 100%;
+}
+.without-padding{
+	padding: 0px !important;
 }
