@@ -1,0 +1,75 @@
+.profile
+{
+  margin: 20px;
+  display: flex;
+  align-items: center;
+}
+
+
+.profile .image
+{
+  width: 300px;
+}
+
+.profile .name
+{
+  color: green;
+}
+
+.profile .description
+{
+  color: red;
+  font-family: "Lucida Console";
+}
+
+.data .body
+{
+  margin-top: 10px;
+}
+
+.data .body
+{
+  display: grid;
+  grid: 1fr ;
+  grid-row-gap: 5px;
+}
+
+/* Compu normal  */
+@media only screen and (min-width : 840px) {
+  .profile .data
+  {
+    margin-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width : 839px) {
+  .profile{
+    flex-direction: column;
+  }
+
+  .data
+  {
+    margin-top: 20px;
+  }
+}
+
+
+@media only screen and (max-width : 500px) {
+
+  .data .body
+  {
+    margin-left: 10px;
+    grid-row-gap: 0;
+  }
+
+  .fieldValue
+  {
+    padding-top: 3px;
+    padding-bottom: 15px;
+  }
+  .field{
+    display: contents;
+  }
+
+}

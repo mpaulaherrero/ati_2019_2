@@ -1,0 +1,10 @@
+config = {
+    "asignatura": "ATI UCV 2019-2",
+    "color": "Mi color favorito es:",
+    "libro": "Mi libro favorito es:",
+    "musica": "Mi estilo de música preferida:",
+    "videojuego": "Videojuegos favoritos:",
+    "lenguajes": "Lenguajes aprendidos:",
+    "email_contact": "Si necesitan comunicarse conmigo me pueden escribir a: [email]",
+    "footer": "Copyright © 2019 Escuela de computación - ATI. Todos los derechos reservados"
+}
