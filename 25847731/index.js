@@ -30,10 +30,22 @@ formFields.forEach(field => {
     const dom_field = document.createElement("div");
     const span_question = document.createElement("span");
     const span_response = document.createElement("span");
-    
+
+    dom_field.classList.add("mdl-grid")
+
     dom_field.classList.add("field");
     span_question.classList.add("fieldName");
+    span_question.classList.add("mdl-cell");
+    span_question.classList.add("mdl-cell--4-col");
+    span_question.classList.add("mdl-cell--6-col-tablet");
+
+
+    
     span_response.classList.add("fieldValue");
+    span_response.classList.add("mdl-cell");
+    span_response.classList.add("mdl-cell--8-col");
+    span_response.classList.add("mdl-cell--6-col-tablet");
+
 
     span_response.innerText = fieldValue;
     span_question.innerText = fieldQuestion;
