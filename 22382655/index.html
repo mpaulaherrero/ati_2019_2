@@ -7,6 +7,8 @@
     <link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="page.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <script type="text/javascript" src="config.json"></script>
     <script type="text/javascript" src="perfil.json"></script>
     <title>Osvani Colina</title>
@@ -23,31 +25,26 @@
             </ul>
         </nav>
     </header>
-    <section>
 
-        <table>
-            <tr>
-                <td>
-                    <div>
-                        <img src="22382655.jpg" alt="Nada" id="img-perfil">
-                    </div>
-                </td>
-                <td>
-                    <div>
-                        <h1 id="nombre"></h1>
-                        <p id="descripcion"></p>
-                        <p id="color"></p>
-                        <p id="libro"></p>
-                        <p id="musica"></p>
-                        <p id="videojuego"></p>
-                        <p id="lenguajes"></p>
-                        <p id="email"></p>
-                    </div>
-                </td>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <img src="22382655.jpg" class="img-fluid" alt="Nada" id="img-perfil">
+            </div>
+            <div class="col-lg-6">
+                <h1 id="nombre"></h1>
+                <p id="descripcion"></p>
+                <p id="color"></p>
+                <p id="libro"></p>
+                <p id="musica"></p>
+                <p id="videojuego"></p>
+                <p id="lenguajes"></p>
+                <p id="email"></p>
+            </div>
+        </div>
 
-    </section>
+    </div>
+
     <aside></aside>
     <footer></footer>
 
@@ -68,6 +65,9 @@
         document.getElementById('email').innerHTML = email;
         document.getElementsByTagName('footer')[0].innerHTML = config.footer;
     </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
