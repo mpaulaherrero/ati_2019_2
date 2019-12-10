@@ -1,3 +1,4 @@
+
 var perfil = {
   "full_name": "Yldemaro Romero",
   "description": "Soy Estudiante de computación en la UCV y Desarrollador web.",
@@ -10,4 +11,5 @@ var perfil = {
   "ci":"22040096",
   "gender": "masculino",
   "birthday":"27-06-1994"
+
 }

@@ -1,13 +1,16 @@
+
 <!DOCTYPE HTML>
 <html>
 	<head>
 	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="../css/style.css"  type="text/css">
         <link rel="stylesheet" href="page.css" type="text/css">
         <script type="text/javascript" src="config.json"></script>
         <script type="text/javascript" src="perfil.json"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 		<title>Yldemaro Romero</title>
 	</head>
 	<body>
@@ -21,41 +24,68 @@
 				</ul>
 	        </nav>
 	    </header>
-	    <section>
-        <div class="mainContainer">
-            <div class="imageContainer">
-                <img src="22040096.jpg" alt="Perfil">
+	    <section class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+                <img  class="img-fluid" alt="Responsive image" src="22040096.jpg" alt="Perfil">
             </div>
-            <div class="infoContainer">
-                <div>
+            <div class="col-lg-9">
+                <div class="container-fluid">
                     <h1 class="title" id="fullName"></h1>
                     <p class="description" id="description"></p>
-                    <table>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td id="labelColor"></td>
-                            <td id="textColor"></td>
-                        </tr>
-                        <tr>
-                            <td id="labelBook"></td>
-                            <td id="textBook"></td>
-                        </tr>
-                        <tr>
-                            <td id="labelMusic"></td>
-                            <td id="textMusic"></td>
-                        </tr>
-                        <tr>
-                            <td id="labelGame"></td>
-                            <td id="textGame"></td>
-                        </tr>
-                        <tr class="languages">
-                            <td><span id="labelLanguages"></span></td>
-                            <td><span id="textLanguages"></span></td>
-                        </tr>
-                    </table>
+                    <ul class="list-group list-group-flush">
+					  <li class="list-group-item list-group-item-primary">
+					  	<div class="row">
+	                    	<div class="col-md-3 col-md-4 col-lg-4">
+	                    		<label id="labelColor"></label>
+	                    	</div>
+	                    	<div class="col-sm-5 col-md-5 col-lg-8">
+	                    		<label id="textColor"></label>
+	                    	</div>
+                    	</div>
+					  </li>
+					  <li class="list-group-item">
+					  	<div class="row">
+	                    	<div class="col-md-4 col-lg-4">
+	                    		<label id="labelBook"></label>
+	                    	</div>
+	                    	<div class=" col-md-5 col-lg-8">
+	                    		<label id="textBook"></label>
+	                    	</div>
+	                    </div>
+					  </li>
+					  <li class="list-group-item list-group-item-primary">
+					  	<div class="row">
+	                    	<div class="col-md-4 col-lg-4">
+	                    		<label id="labelMusic"></label>
+	                    	</div>
+	                    	<div class="col-md-5 col-lg-8">
+	                    		<label id="textMusic"></label>
+	                    	</div>
+	                    </div>
+					  </li>
+					  <li class="list-group-item">
+					  	<div class="row">
+	                    	<div class="col-md-4 col-lg-4">
+	                    		<label id="labelGame"></label>
+	                    	</div>
+	                    	<div class="col-md-5 col-lg-8">
+	                    		<label id="textGame"></label>
+	                    	</div>
+	                    </div>
+					  </li>
+					  <li class="list-group-item list-group-item-primary">
+					  	<div class="row languages">
+	                    	<div class="col-md-4 col-lg-4">
+	                    		<label id="labelLanguages"></label>
+	                    	</div>
+	                    	<div class="col-md-5 col-lg-8">
+	                    		<label id="textLanguages"></label>
+	                    	</div>
+	                    </div>
+					  </li>
+					</ul>
+					<br>
                     <p id="labelInfo"></p>
                 </div>
             </div>
